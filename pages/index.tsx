@@ -1,13 +1,15 @@
 import Head from 'next/head'
+import React from "react"
 
-export default function Home() {
+const Home : React.FC = () => {
+  let firstname : string;
+  firstname = "alo"
   return (
     <div className="container">
       <Head>
         <title>Blog Vệ Sinh Pin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -207,3 +209,4 @@ export default function Home() {
     </div>
   )
 }
+export default Home
